@@ -1,0 +1,28 @@
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+.profile-tile {
+  background-color: #eee;
+  padding: 20px;
+  width: 350px;
+  margin: 20px auto;
+}
+
+.avatar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.fav-color {
+  margin: auto;
+  width: 50px;
+  height: 50px;
+}
+svg{
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: -1000;
+}
+.form_container{
+  padding: 20px;
+}

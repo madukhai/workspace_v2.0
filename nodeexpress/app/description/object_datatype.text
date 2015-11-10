@@ -1,0 +1,23 @@
+Object    data type of each property.
+
+product = {
+	ProductId : a string created by serverside,
+	name: string,
+	description: string,
+	category: array contain strings,
+	price: number,
+	quantity: number,
+	status: (1 or 0) OR ('active' or 'inactive'),
+	
+	//blow is what we will add.
+	rating: number (range 0-10)
+	reviews: array contain review objects like {customer:"a string ", contents: 'blablabla' }
+}
+
+order = {
+	OderId: a string created by serverside,
+	cart: array contains product objects,
+	total: number,
+	tax: number,
+	final_total: number
+}

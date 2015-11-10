@@ -1,0 +1,1 @@
+var myApp = angular.app('myApp',['ui.bootstrap','ngRoute']); // [] for depandencies.

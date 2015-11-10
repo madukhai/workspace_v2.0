@@ -1,0 +1,26 @@
+<form>
+  <div class="form-group">
+    <label for="username">Username</label>
+    <input type="text" class="form-control" id="username" placeholder="Username" ng-model="ctrl.username">
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" id="password" placeholder="Password" ng-model="ctrl.password">
+  </div>
+
+  <div class="text-center">
+    
+    <!--TODO #1: 
+      Clicking create account should take the username and password to create a 
+      new account.
+    -->
+    <button type="button" class="btn btn-default btn-lg" ng-click="ctrl.open()">Create account</button>
+    
+    <!--TODO #2: 
+      Clicking login should take the username and password and try to log the
+      user in. If they are logged in successfully then 
+    -->
+    <button type="submit" class="btn btn-primary btn-lg" ng-click="ctrl.logIn(ctrl.username, ctrl.password)">Login</button>
+  </div>
+
+</form>

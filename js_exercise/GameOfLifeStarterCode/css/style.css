@@ -1,0 +1,19 @@
+.cell {
+  width: 15px;
+  height: 15px;
+  /*transition: background-color 0.5s ease;*/
+}
+
+.cell.alive {
+  background-color: black;
+}
+
+.world {
+  border: 1px solid black;
+  border-collapse:collapse;
+  margin-top: 10px;
+}
+
+.paused {
+  background-color: #eee;
+}

@@ -1,0 +1,37 @@
+<div class="cart">
+	<div class="cart_content">
+		<h1 ng-style="{'font-size':'6em','color':'white'}">Shopping Cart</h1>
+
+			<div ng-repeat="product in Ctrl.cart">
+				<div>	
+					<strong>Item:</strong> {{ product.name }}   
+					<strong>Price</strong>   {{ product.price|currency }}  
+				</div>
+				<div>
+					<form name = "quantity_form">
+						<strong>Quantity:</strong>
+						<button ng-click = "Ctrl.updateAmount('addition', product)"
+								ng-disabled = "quantity_form.quantity_input.$error.pattern">+</button>
+
+						<input type="text"
+							   name= "quantity_input"
+							   ng-model="product.amount"
+						  	   ng-pattern = "/^[0-9]{1,7}$/">
+
+						<button ng-click = "Ctrl.updateAmount('subtraction', product)"
+								ng-disabled = "product.amount <= 0 || quantity_form.quantity_input.$error.pattern">-</button>
+								
+						<span ng-show = "quantity_form.quantity_input.$error.pattern">Only Enter Numbers</span>
+					</form>
+				</div>
+			</div>	
+			<div>
+				total: {{ Ctrl.total | currency }}<br>
+				tax: {{ Ctrl.tax | currency }}<br>
+				final total: {{ Ctrl.final_total | currency }}
+			</div>
+				
+		<button class="toCheckout" ng-click="Ctrl.checkOut()">Checkout</button>
+		<button ng-click="Ctrl.close()">close</button>
+	</div>
+</div>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link href="http://fonts.googleapis.com/css?family=Nunito:400,700,300" rel="stylesheet" type="text/css">
+
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/ace/1.1.9/ace.js"></script>
+	<link rel="Stylesheet" type="text/css" href="css/app.css">
+
+	<title>Workshop - Brainstation</title>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/ace/1.1.9/theme-monokai.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/ace/1.1.9/mode-html.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/ace/1.1.9/mode-css.js"></script>
+
+</head>
+<body>	
+	<header>
+		<img class="logo" src="http://174.129.248.23/brainstation/images/logo_brainstation_white.svg">
+		<div class="stepContainer">
+			<button id="step1" class="step">Step 1</button>
+			<button id="step2" class="step">Step 2</button>
+			<button id="step3" class="step">Step 3</button>
+			<button id="step4" class="step">Step 4</button>
+		</div>
+
+		<div class="rightContainer">
+			<button class="saveBtn">
+				<i class="fa fa-save"></i> Save
+			</button>
+			<button class="launchBtn">
+				<i class="fa fa-external-link"></i> Launch 
+			</button>
+		</div>
+	</header>
+
+	<div class="editorContainer">
+		<h4>HTML</h4>
+		<div id="htmlEditor" class="editor ace_editor ace-monokai ace_dark">
+			<textarea class="ace_text-input" wrap="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="opacity: 0; left: 0px; top: 0px; height: 16px; width: 7.20125px;"></textarea>
+			<div class="ace_gutter">
+				<div class="ace_layer ace_gutter-layer ace_folding-enabled" style="margin-top: 0px; height: 92px; width: 41px;">
+					<div class="ace_gutter-cell  ace_info" style="height: 16px;">
+						1<span class="ace_fold-widget ace_start ace_open" style="height: 16px;"></span>
+					</div>
+					<div class="ace_gutter-cell " style="height: 16px;">
+						2<span class="ace_fold-widget ace_start ace_open" style="height: 16px;"></span>
+					</div>
+					<div class="ace_gutter-cell " style="height: 16px;">
+						3<span class="ace_fold-widget ace_start ace_open" style="height: 16px;"></span>
+					</div><div class="ace_gutter-cell " style="height: 16px;">4</div>
+					<div class="ace_gutter-cell " style="height: 16px;">
+						5<span class="ace_fold-widget ace_start ace_open" style="height: 16px;"></span>
+					</div>
+				</div>
+				<div class="ace_gutter-active-line" style="top: 912px; height: 16px;"></div>
+			</div>
+			<div class="ace_scroller" style="left: 41px; right: 15px; bottom: 0px;">
+				<div class="ace_content" style="margin-top: 0px; width: 642px; height: 92px; margin-left: 0px;">
+					<div class="ace_layer ace_print-margin-layer">
+						<div class="ace_print-margin" style="left: 580.1px; visibility: visible;"></div>
+					</div>
+						<div class="ace_layer ace_marker-layer">
+						<div class="ace_selection ace_start" style="height:16px;right:0;top:0px;left:4px;"></div>
+						<div class="ace_selection" style="height:16px;width:0px;top:80px;left:4px;"></div>
+						<div class="ace_selection" style="height:64px;right:0;top:16px;left:4px;"></div>
+					</div>
+					<div class="ace_layer ace_text-layer" style="padding: 0px 4px;">
+						<div class="ace_line" style="height:16px">
+							<span class="ace_meta ace_tag ace_punctuation ace_tag-open ace_xml">&lt;</span>
+							<span class="ace_meta ace_tag ace_tag-name ace_xml">section</span>
+							<span class="ace_text ace_tag-whitespace ace_xml"> </span>
+							<span class="ace_entity ace_other ace_attribute-name ace_xml">class</span>
+							<span class="ace_keyword ace_operator ace_attribute-equals ace_xml">=</span>
+							<span class="ace_string ace_attribute-value ace_xml">"receipt"</span>
+							<span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span>
+						</div>
+						<div class="ace_line" style="height:16px">
+							<span class="ace_text ace_xml">    </span>
+							<span class="ace_meta ace_tag ace_punctuation ace_tag-open ace_xml">&lt;</span>
+							<span class="ace_meta ace_tag ace_tag-name ace_xml">div</span>
+							<span class="ace_text ace_tag-whitespace ace_xml"> </span>
+							<span class="ace_entity ace_other ace_attribute-name ace_xml">class</span>
+							<span class="ace_keyword ace_operator ace_attribute-equals ace_xml">=</span>
+							<span class="ace_string ace_attribute-value ace_xml">"left side"</span>
+							<span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span>
+						</div>
+						<div class="ace_line" style="height:16px">
+							<span class="ace_indent-guide">    </span>
+							<span class="ace_text ace_xml">    </span>
+							<span class="ace_meta ace_tag ace_punctuation ace_tag-open ace_xml">&lt;</span>
+							<span class="ace_meta ace_tag ace_tag-name ace_xml">div</span>
+							<span class="ace_text ace_tag-whitespace ace_xml"> </span>
+							<span class="ace_entity ace_other ace_attribute-name ace_xml">class</span>
+							<span class="ace_keyword ace_operator ace_attribute-equals ace_xml">=</span>
+							<span class="ace_string ace_attribute-value ace_xml">"line-item"</span>
+							<span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span>
+						</div>
+						<div class="ace_line" style="height:16px"></div>
+						<div class="ace_line" style="height:16px">
+							<span class="ace_indent-guide">    </span>
+							<span class="ace_indent-guide">    </span>
+							<span class="ace_text ace_xml">    </span>
+							<span class="ace_meta ace_tag ace_punctuation ace_tag-open ace_xml">&lt;</span>
+							<span class="ace_meta ace_tag ace_tag-name ace_xml">div</span>
+							<span class="ace_text ace_tag-whitespace ace_xml"> </span>
+							<span class="ace_entity ace_other ace_attribute-name ace_xml">class</span>
+							<span class="ace_keyword ace_operator ace_attribute-equals ace_xml">=</span>
+							<span class="ace_string ace_attribute-value ace_xml">"text inline"</span>
+							<span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span>
+						</div>
+					</div>
+					<div class="ace_layer ace_marker-layer"></div>
+					<div class="ace_layer ace_cursor-layer ace_hidden-cursors">
+						<div class="ace_cursor" style="left: 76.0125px; top: 912px; width: 7.20125px; height: 16px;"></div>
+					</div>
+				</div>
+			</div>
+			<div class="ace_scrollbar ace_scrollbar-v" style="width: 20px; bottom: 0px;">
+				<div class="ace_scrollbar-inner" style="width: 20px; height: 928px;"></div>
+			</div>
+			<div class="ace_scrollbar ace_scrollbar-h" style="display: none; height: 20px; left: 41px; right: 15px;">
+				<div class="ace_scrollbar-inner" style="height: 20px; width: 683px;"></div>
+			</div>
+			<div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; overflow: hidden;">
+				<div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; overflow: visible;">
+				</div>
+				<div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; overflow: visible;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="editorContainer">
+		<h4>CSS</h4>
+		<div id="cssEditor" class="editor ace_editor ace-monokai ace_dark">
+			<textarea class="ace_text-input" wrap="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="opacity: 0; height: 16px; width: 7.20125px; left: 0px; top: 0px;"></textarea>
+			<div class="ace_gutter">
+				<div class="ace_layer ace_gutter-layer ace_folding-enabled" style="margin-top: 0px; height: 98px; width: 41px;">
+					<div class="ace_gutter-cell " style="height: 16px;">
+						1<span class="ace_fold-widget ace_start ace_open" style="height: 16px;"></span>
+					</div>
+					<div class="ace_gutter-cell " style="height: 16px;">2</div>
+					<div class="ace_gutter-cell " style="height: 16px;">3</div>
+					<div class="ace_gutter-cell " style="height: 16px;">4</div>
+					<div class="ace_gutter-cell " style="height: 16px;">5</div>
+					<div class="ace_gutter-cell " style="height: 16px;">
+						6<span class="ace_fold-widget ace_start ace_open" style="height: 16px;"></span>
+					</div>
+					<div class="ace_gutter-cell " style="height: 16px;">7</div>
+				</div>
+				<div class="ace_gutter-active-line" style="top: 1376px; height: 16px;"></div>
+			</div>
+			<div class="ace_scroller" style="left: 41px; right: 15px; bottom: 15px;">
+				<div class="ace_content" style="margin-top: 0px; width: 685px; height: 98px; margin-left: 0px;">
+					<div class="ace_layer ace_print-margin-layer">
+						<div class="ace_print-margin" style="left: 580.1px; visibility: visible;"></div>
+					</div>
+					<div class="ace_layer ace_marker-layer">
+						<div class="ace_selection ace_start" style="height:16px;right:0;top:0px;left:4px;"></div>
+						<div class="ace_selection" style="height:16px;width:0px;top:96px;left:4px;"></div>
+						<div class="ace_selection" style="height:80px;right:0;top:16px;left:4px;"></div>
+					</div>
+					<div class="ace_layer ace_text-layer" style="padding: 0px 4px;">
+						<div class="ace_line" style="height:16px">
+							<span class="ace_constant">html</span>
+							,<span class="ace_constant">body</span>
+							<span class="ace_paren ace_lparen">{</span>
+						</div>
+						<div class="ace_line" style="height:16px">
+							    <span class="ace_support ace_type">height</span>
+							:<span class="ace_constant ace_numeric">100</span>
+							<span class="ace_keyword">%</span>
+							;
+						</div>
+						<div class="ace_line" style="height:16px">
+							    <span class="ace_support ace_type">margin</span>
+							:<span class="ace_constant ace_numeric">0</span>
+							;
+						</div>
+						<div class="ace_line" style="height:16px">
+							    <span class="ace_support ace_type">background</span>
+						    : <span class="ace_constant ace_numeric">#d8d8d8</span>
+						</div>
+						<div class="ace_line" style="height:16px">
+							<span class="ace_paren ace_rparen">}</span>
+						</div>
+						<div class="ace_line" style="height:16px">
+							<span class="ace_constant">body</span>
+							<span class="ace_paren ace_lparen">{</span>
+						</div>
+					</div>
+					<div class="ace_layer ace_marker-layer"></div>
+					<div class="ace_layer ace_cursor-layer ace_hidden-cursors">
+						<div class="ace_cursor" style="left: 4px; top: 1376px; width: 7.20125px; height: 16px;"></div>
+					</div>
+				</div>
+			</div>
+			<div class="ace_scrollbar ace_scrollbar-v" style="width: 20px; bottom: 15px;">
+				<div class="ace_scrollbar-inner" style="width: 20px; height: 1392px;"></div>
+			</div>
+			<div class="ace_scrollbar ace_scrollbar-h" style="height: 20px; left: 41px; right: 15px;">
+				<div class="ace_scrollbar-inner" style="height: 20px; width: 698px;"></div>
+			</div>
+			<div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; overflow: hidden;">
+				<div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; overflow: visible;"></div>
+				<div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; overflow: visible;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>

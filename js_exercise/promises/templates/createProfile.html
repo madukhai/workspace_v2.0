@@ -1,0 +1,20 @@
+<div class="form_container">
+	<button ng-click="ctrl.cancel()">close</button>
+	<h1>Create User</h1>
+
+	<form ng-submit="ctrl.submit()">
+		<p>Username</p>
+		<input name="username" type="username" ng-model='ctrl.username'>
+		<p>Password</p>
+		<input name="password" type="password" ng-model='ctrl.password'>
+		<p>Name</p>
+		<input name="name" type="name" ng-model='ctrl.name'>
+		<p>Age</p>
+		<input name="age" type="age" ng-model='ctrl.age'>
+		<p>Email address</p>
+		<input name="email" type="email" ng-model='ctrl.email'>
+		<button type='submit'>Create</button>
+		
+	</form>
+
+</div>

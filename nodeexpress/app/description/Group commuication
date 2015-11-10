@@ -1,0 +1,31 @@
+Group commuication
+
+testing linda branch
+
+How to write Git Commits:
+
+- Summary: 	- use a method name, exmple: getPassword();
+			- or use a feature name with a description, example: Shopping Cart - add another product
+
+- Description:	- "VERB" + feature, example: Created a new routing request
+				- Tell us what's new in the code or what has been changed
+
+
+How to write comments inline in the code:
+
+Here is an example:
+
+/* **********************************
+Create a new user. Returns a profile.
+Parameters:
+username: String
+password: String
+api: service
+$location: service
+return: Array of Objects
+* **********************************/
+function createNewUser(username, password, api, $location {
+	// This is what this code does.
+	[block of code] // with complicated code, tell us how you coded this.
+	return
+});

@@ -1,0 +1,70 @@
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* 
+  over-ride bootstrap media-firstChild's margin-top
+*/
+.media:first-child{
+  margin-top: 10px;
+}
+.movie-list-item {
+  padding: 10px;
+  cursor: pointer;
+  display: inline-block;
+  float:left;
+  width: 50%;
+  margin-top: 10px;
+}
+
+.movie-list-item:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+
+.movie-list-item .poster-container {
+  height: 200px;
+  width: 150px;
+}
+
+.movie-list-item .movie-poster {
+  max-height: 200px;
+  max-width: 150px;
+}
+
+.released-date {
+  margin-top: 20px;
+}
+
+#movie-details .movie-poster {
+  max-height: 350px;
+  max-width: 262px;
+}
+
+#movie-details .buttons {
+  text-align: center;
+}
+
+.page{
+  display: block;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100;
+}
+path {
+      
+      transform-origin: center bottom;
+      transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+      
+    }

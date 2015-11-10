@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>new web</title>
+
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+
+	<!-- script -->
+	
+	<script type="text/javascript" src="js/angular.js"></script>>
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src='js/insultCtrl.js'></script>
+	<script type="text/javascript" src='js/titleCaseFilter.js'></script>
+	<script type="text/javascript" src='js/insultService.js'></script>
+
+</head>
+<body ng-app="insultApp" ng-controller="InsultCtrl as ctrl">
+  <div class="container">
+    
+    <h1 class="text-center">Insult Generator</h1>
+    <div class="jumbotron">
+      <h2 class="text-center">{{ctrl.insult}}</h2>
+    </div>
+    <div class="text-center">
+      <button class="btn btn-primary btn-lg" ng-click="ctrl.replaceInsult()">Sayith</button>
+    </div>
+    
+  </div>
+  
+
+</body>
+</html>

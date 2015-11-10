@@ -1,0 +1,36 @@
+<div class="checkout_content">
+	<h1 ng-style="{'font-size': '6em', 'color':'white' }">Check out</h1>
+	<!-- show order details -->
+	<div ng-repeat="product in Ctrl.order.cart">
+		{{ product.name }}
+		{{ product.price | currency}}
+		{{ product.amount }}
+		
+	</div>
+	<div>
+		{{ Ctrl.total }}
+		{{ Ctrl.tax }}
+		{{ Ctrl.finalTotal }}
+
+	</div>
+
+	<form action="" method="POST">
+		<script
+		    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+		    data-key="pk_test_8x3SVCZEebDH11CQYERuYXNG"
+		    data-amount="2000"
+		    data-name="Demo Site"
+		    data-description="2 widgets ($20.00)"
+		    data-image="/128x128.png"
+		    data-locale="auto">
+		</script>
+	</form>
+
+
+
+
+
+	<button ng-click="Ctrl.confirmOrder()">Confirm Order</button>
+	<button ng-click="Ctrl.backToCart()">Back to Cart</button>
+	<button ng-click="Ctrl.close()">close</button>
+</div>

@@ -1,0 +1,26 @@
+function diamond(n){
+  if(n%2 == 0){
+    diam = null;
+  }else{
+    var diam_left = "";
+    var diam_right = "";
+    for(var i = 0; i<n; i+=2);
+        var this_line = '';
+        var num_of_space = (n-i-1)/2;
+        for(var j=0;j<num_of_space;j++){
+          this_line +=" ";
+        }
+        for(var k=0; k<i;k++){
+        
+          this_line += "*";
+        }
+        this_line += '\n';
+        diam_left += this_line;
+        diam_right = this_line + diam_right;
+  }
+  return diam;
+}
+
+
+
+console.log(diamond(5));

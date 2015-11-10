@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+  TODO #2: There is an Angular module named "life" defined in script.js. Use 
+  ng-app to initialize angular with the "life" module here. Try adding a binding
+  inside the <body> to verify that angular is working. e.g. {{21 * 2}}
+-->
+<!--
+  TODO #4: Using the ng-controller tell angular that you want to use the 
+  LifeCtrl controller inside this html tag and alias it as 'ctrl'. Try binding
+  to a variable in your controller to test that it is working. e.g. 
+  {{ctrl.cells}}
+-->
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--TODO #1: add the angular.js script here-->
+    <script type="text/javascript" src="js/angular.js"></script>
+
+    <script src="app.js"></script>
+</head>
+
+<body ng-app = 'life' ng-controller="LifeCtrl as ctrl">
+
+<!--TODO #12: toggle whether the game is running when you click this button-->
+<button ng-switch="ctrl.isPaused" ng-click="ctrl.switch()">
+    <!--
+      TODO #12: dynamically change the text of this button to "Play" or "Pause"
+      depending on whehter the game is currently playing
+    -->
+    <div ng-switch-when="true">Play</div>
+    <div ng-switch-when="false">Pause</div>
+</button>
+
+<!--
+  TODO #10: reset the alive property of each cell so that it has a 40% chance of
+  beling alive.
+-->
+<button ng-click="ctrl.randomize()">Randomize</button>
+
+<!--TODO #11: set the alive property of all cells to false when this button is clicked-->
+<button ng-click="ctrl.clear()">Clear</button>
+
+<!--TODO #12: add the class "paused" to the table if the game is paused-->
+<table class="world" ng-class="{paused: ctrl.isPaused}">
+    <!--
+      TODO #5: dynamically generate these rows and cells from the data in the
+      controller.
+    -->
+    <tr  ng-repeat="row in ctrl.cells">
+        <!--TODO #6: dynamically add the alive class to a cell if it is alive-->
+        <!--TODO #7: toggle whether a cell is alive when you click on it-->
+        
+        <td class="cell" ng-repeat="cell in row" ng-class="{alive: cell.alive}" ng-click="cell.alive = !cell.alive"></td>
+    </tr>
+    
+</table>
+</body>
+
+</html>

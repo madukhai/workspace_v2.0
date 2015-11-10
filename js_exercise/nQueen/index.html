@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--TODO #1: add the angular.js script here-->
+    <script type="text/javascript" src="js/angular.js"></script>
+
+    <script src="app2.js"></script>
+</head>
+
+<body ng-app = 'queen' ng-controller="QueenCtrl as ctrl">
+
+
+<button ng-switch="ctrl.isPaused" ng-click="ctrl.switch()">
+   
+    <div ng-switch-when="true">Play</div>
+    <div ng-switch-when="false">Pause</div>
+</button>
+
+
+<button ng-click="ctrl.randomize()">Randomize</button>
+
+<button ng-click="ctrl.clear()">Clear</button>
+
+<table class="world" ng-class="{paused: ctrl.isPaused}">
+   
+    <tr  ng-repeat="row in ctrl.cells">
+        
+        
+        <td class="cell" ng-repeat="cell in row" ng-class="{alive: cell.change}" ng-click="ctrl.findRoute(cell)">{{cell.avaliable}} </td>
+        <!-- <td class="cell" ng-repeat="cell in row" ng-class="{alive: cell.queen}" ng-click="ctrl.switchQueen(cell)">{{cell.avaliable}} </td> -->
+    </tr>
+    
+</table>
+</body>
+
+</html>
