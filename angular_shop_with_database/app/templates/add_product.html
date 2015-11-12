@@ -1,0 +1,58 @@
+<section class="adminContainer">
+	<div class="innerContainer">
+		<h1>
+			Add Product
+		</h1>
+		<div class="row">
+			<div class="three columns">
+				<form name="frm" ng-submit="Ctrl.addProduct()">
+					<input 
+						type="text"
+						name="name" 
+						ng-model="Ctrl.name" 
+						placeholder="name"
+						required/>
+					<span ng-messages="frm.name.$dirty && frm.name.$error">
+						<span ng-message="required">Please enter a name for your product.
+						</span>
+					</span>
+					
+					<textarea 
+						ng-model="Ctrl.description"
+						name="description" 
+						placeholder="description"
+						required/
+						>
+					</textarea>
+					<!-- <span ng-messages="frm.description.$dirty && frm.description.$error"></span>
+					<span ng-message="required">Please enter a description for your products</span> -->
+					<input 
+						type="url"
+						name="image" 
+						ng-model="Ctrl.image" 
+						placeholder="Enter a URL of the image"
+						>
+					<!-- <span ng-messages="frm.image.$dirty && frm.image.$error" ng-messages-multiple></span>
+					<span ng-message="url">Please enter a url for your image</span> -->
+					<input 
+						type="number" 
+						ng-model="Ctrl.price"
+						name="price"
+						placeholder="price"
+						ng-min="1"
+						required/
+						>
+					<input type="text" name="category" ng-model="Ctrl.category" placeholder="category">
+					<input type="text" name="quantity" ng-model="Ctrl.quantity" placeholder="quantity">
+					<select ng-model="Ctrl.status" name="status">
+							<option value="" selected>Status</option>
+							<option value="active">Active</option>
+							<option value="inactive">Inactive</option>
+					</select>
+					<button>Add Product</button>
+					
+				</form>
+			</div>
+		</div>
+	</div>
+</section>

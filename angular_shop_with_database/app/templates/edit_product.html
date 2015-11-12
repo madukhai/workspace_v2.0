@@ -1,0 +1,40 @@
+<section class="adminContainer">
+    <div class="innerContainer">
+        <h1 class="centreText">
+            Edit Product
+        </h1>
+        
+        <form ng-submit="Ctrl.editProduct()">
+            <article class="row">
+                <section class="twelve columns">
+                    <label for="name">Name: {{Ctrl.product.name}}:</label>
+                    <input id="name" class="u-full-width" type="text" ng-model="Ctrl.product.name">
+                </section>
+                <section class="twelve columns">
+                    <label for="description">Description: {{Ctrl.product.description}}</label>
+                    <textarea id="description" class="u-full-width" ng-model="Ctrl.product.description"></textarea>
+                    
+                </section>
+                <section class="twelve columns">
+                    <label for="price">Price: ${{Ctrl.product.price}}</label>
+                    <input id="price" type="text" ng-model="Ctrl.product.price">
+                    <label for="category">Category: {{Ctrl.product.category}}</label>
+                    <input id="category" type="text" ng-model="Ctrl.product.category">
+                    <label for="quantity">Quantity: {{Ctrl.product.quantity}}</label>
+                    <input id="quantity" type="text" ng-model="Ctrl.product.quantity">
+                    <label for="status">Status: {{Ctrl.product.status}}</label>
+                    <select id="status" ng-model="Ctrl.product.status">
+                            <option value="" selected>Status</option>
+                            <option value="active">Active</option>
+                            <option value="inactive">Inactive</option>
+                    </select>
+                </section>
+               <!--  <section > -->
+                    <button class="button">Make Changes</button>
+                     <!-- <section class="button"><a href="#/admin">Admin</a></section> -->
+                    <!-- </section> -->
+                </article>
+            </form>
+        </div>
+    <!-- end container -->
+    </section>

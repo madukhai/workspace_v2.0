@@ -1,0 +1,43 @@
+<section class="adminContainer">
+    <div class="innerContainer">
+            <h1 class="centreText">Store Admin Page</h1>
+            <!-- <hr> -->
+            <nav class="nav">
+                <ul>
+                    <li><a href="/#/add_product">Add Product</a></li>
+                    <li><a href="/#/view_orders">View Orders</a></li>
+                    <li><a href="" ng-click="Ctrl.logout()">Logout</a></li>
+                </ul>
+            </nav>
+    
+            <!-- <hr> -->
+    
+            <table class="u-full-width">
+                <thead>
+                    <tr>
+                        
+                        <th><strong>Name</strong></th>
+                        <th><strong>Description</strong></th>
+                        <th><strong>Price</strong></th>
+                        <th><strong>Stock Quantity</strong></th>
+                        <th><strong>Status</strong></th>
+                        <th><strong>Edit</strong></th>
+                    </tr>
+                    <tr ng-repeat="product in Ctrl.products">
+                       
+                        <td>{{product.name}}</td>
+                        <td>{{product.description}}</td>
+                        <td>{{product.price}}</td>
+                        <td>{{product.quantity}}</td>
+                        <td>{{product.status}}</td>
+                        <td><a ng-href="/#/edit_product/{{product.productid}}">Edit Item</a></td> 
+                        <!-- ng-click="Ctrl.changeId({{product.productId}})" -->
+                        <!--  -->
+                        
+                    </tr>
+                </thead>
+    
+            </table>
+        </div>
+<!-- End Container -->
+</section> 

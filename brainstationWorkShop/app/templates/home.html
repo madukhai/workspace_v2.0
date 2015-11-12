@@ -1,0 +1,38 @@
+
+<div class='workshop' ng-controller='MainCtrl as Ctrl'>
+
+	<header>
+		<img class="logo" src="http://174.129.248.23/brainstation/images/logo_brainstation_white.svg">
+		<div class="stepContainer">
+			<button id="step1" class="step" ng-click='ctrl.goToStep(1)'>Step 1</button>
+			<button id="step2" class="step" ng-click='ctrl.goToStep(2)'>Step 2</button>
+			<button id="step3" class="step" ng-click='ctrl.goToStep(3)'>Step 3</button>
+			<button id="step4" class="step" ng-click='ctrl.goToStep(4)'>Step 4</button>
+		</div>
+
+		<div class="rightContainer">
+			<button id="saveBtn" class="saveBtn" ng-click='ctrl.save()'>Save</button>
+		</div>
+	</header>
+
+	<div class="codeContainer" ng-repeat='file in ctrl.files'>
+		<h2>
+			{{file.name}}
+		</h2>
+		<div class='main'>
+			<!-- file content here -->
+			<div class="index">
+				
+
+			</div>
+
+			<form>
+				<textarea>
+					
+				</textarea>
+			</form>
+		</div>
+	</div>
+
+
+</div>
